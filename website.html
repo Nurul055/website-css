@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Skincare Harian</title>
+    <!-- Memuat Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Konfigurasi Font dan Tema -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Latar belakang abu-abu muda */
+        }
+        .step-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 1. NAVBAR (Heading Menu) -->
+    <nav class="sticky top-0 z-50 bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <span class="text-2xl font-extrabold text-blue-600">Skincare Harian</span>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#pagi" class="text-gray-600 hover:text-blue-600 font-medium">Rutinitas Pagi</a>
+                    <a href="#malam" class="text-gray-600 hover:text-blue-600 font-medium">Rutinitas Malam</a>
+                    <a href="#tips" class="text-gray-600 hover:text-blue-600 font-medium">Tips</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- HEADER KONTEN -->
+        <header class="text-center mb-12 p-8 bg-white rounded-2xl shadow-xl">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900">
+                <span class="text-blue-600">Daftar</span> Rutinitas Skincare Dasar
+            </h1>
+            <p class="mt-4 text-xl text-gray-600">Sederhana & Efektif untuk Perawatan Kulit Optimal.</p>
+        </header>
+
+        <!-- 2. RUTINITAS PAGI -->
+        <section id="pagi" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+                <span class="mr-3 text-yellow-500">☀️</span> Rutinitas Pagi (Day Time)
+            </h2>
+            <p class="text-gray-600 mb-6 italic">Tujuan utama: **Melindungi** kulit dari sinar UV dan polusi.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Langkah 1: Mencuci Muka -->
+                <div class="step-card bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500">
+                    <span class="block text-4xl font-extrabold text-yellow-500 mb-2">1.</span>
+                    <h3 class="text-xl font-semibold text-gray-900">Mencuci Muka</h3>
+                    <p class="mt-1 text-sm text-gray-700 font-medium">Tipe: Facial Wash (Gel/Foam)</p>
+                    <p class="mt-3 text-gray-500 text-sm">Membersihkan minyak dan kotoran sisa semalam. Pilih yang pH-seimbang.</p>
+                </div>
+
+                <!-- Langkah 2: Melembapkan -->
+                <div class="step-card bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500">
+                    <span class="block text-4xl font-extrabold text-yellow-500 mb-2">2.</span>
+                    <h3 class="text-xl font-semibold text-gray-900">Melembapkan</h3>
+                    <p class="mt-1 text-sm text-gray-700 font-medium">Tipe: Moisturizer (Lotion/Gel)</p>
+                    <p class="mt-3 text-gray-500 text-sm">Menghidrasi kulit dan memperkuat *skin barrier*. Pilih formula ringan.</p>
+                </div>
+
+                <!-- Langkah 3: Perlindungan -->
+                <div class="step-card bg-white p-6 rounded-xl shadow-md border-t-4 border-yellow-500">
+                    <span class="block text-4xl font-extrabold text-yellow-500 mb-2">3.</span>
+                    <h3 class="text-xl font-semibold text-gray-900">Perlindungan (Sunscreen)</h3>
+                    <p class="mt-1 text-sm text-gray-700 font-medium">Tipe: SPF 30 atau lebih</p>
+                    <p class="mt-3 text-gray-500 text-sm">**Langkah terpenting.** Melindungi kulit dari UVA dan UVB.</p>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- 3. RUTINITAS MALAM -->
+        <section id="malam" class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+                <span class="mr-3 text-indigo-500">🌙</span> Rutinitas Malam (Night Time)
+            </h2>
+             <p class="text-gray-600 mb-6 italic">Tujuan utama: **Membersihkan** secara mendalam dan **meregenerasi** kulit.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+                <!-- Langkah 1: Double Cleansing 1 -->
+                <div class="step-card bg-white p-5 rounded-xl shadow-md border-t-4 border-indigo-500">
+                    <span class="block text-2xl font-bold text-indigo-500">1. Cleansing (Tahap 1)</span>
+                    <p class="mt-1 text-xs text-gray-700 font-medium">Micellar Water/Oil/Balm</p>
+                    <p class="mt-2 text-gray-500 text-sm">Mengangkat *sunscreen* dan polusi total.</p>
+                </div>
+
+                <!-- Langkah 2: Double Cleansing 2 -->
+                <div class="step-card bg-white p-5 rounded-xl shadow-md border-t-4 border-indigo-500">
+                    <span class="block text-2xl font-bold text-indigo-500">2. Cleansing (Tahap 2)</span>
+                    <p class="mt-1 text-xs text-gray-700 font-medium">Facial Wash (Gel/Foam)</p>
+                    <p class="mt-2 text-gray-500 text-sm">Membersihkan sisa-sisa dan residu minyak.</p>
+                </div>
+                
+                <!-- Langkah 3: Perawatan Opsional -->
+                <div class="step-card bg-white p-5 rounded-xl shadow-md border-t-4 border-pink-500">
+                    <span class="block text-2xl font-bold text-pink-500">3. Perawatan Aktif</span>
+                    <p class="mt-1 text-xs text-gray-700 font-medium">Serum/Eksfoliasi</p>
+                    <p class="mt-2 text-gray-500 text-sm">Targetkan masalah kulit (2-3 kali seminggu).</p>
+                </div>
+
+                <!-- Langkah 4: Melembapkan -->
+                <div class="step-card bg-white p-5 rounded-xl shadow-md border-t-4 border-indigo-500">
+                    <span class="block text-2xl font-bold text-indigo-500">4. Melembapkan</span>
+                    <p class="mt-1 text-xs text-gray-700 font-medium">Moisturizer (Cream/Lotion)</p>
+                    <p class="mt-2 text-gray-500 text-sm">Mengunci kelembapan dan mendukung perbaikan kulit.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TIPS PENTING -->
+        <section id="tips" class="p-8 bg-white rounded-2xl shadow-xl border-t-8 border-green-500">
+             <h2 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                <span class="mr-3 text-green-500">📌</span> Tips Penting
+            </h2>
+            <ul class="space-y-3 text-lg text-gray-700 list-inside">
+                <li class="flex items-start">
+                    <span class="font-bold text-green-600 mr-2">1.</span>
+                    **Kenali Jenis Kulit Anda:** (Normal, Kering, Berminyak, Kombinasi, Sensitif) agar dapat memilih formula yang tepat.
+                </li>
+                <li class="flex items-start">
+                     <span class="font-bold text-green-600 mr-2">2.</span>
+                    **Uji Coba (Patch Test):** Selalu coba produk baru di area kecil kulit terlebih dahulu.
+                </li>
+                <li class="flex items-start">
+                     <span class="font-bold text-green-600 mr-2">3.</span>
+                    **Kesabaran:** Perubahan kulit tidak instan. Konsistensi adalah kunci!
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-800 text-gray-400 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+            Tampilan data dari dokumen skincare_rutinitas.md
+        </div>
+    </footer>
+
+</body>
+</html>
